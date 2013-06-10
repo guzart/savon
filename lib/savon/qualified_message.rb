@@ -24,7 +24,7 @@ module Savon
               to_hash(value, @types[newpath] ? [@types[newpath]] : newpath)
           )
         else
-          add_namespaces_to_values(value, path) if key == :order!
+          # add_namespaces_to_values(value, path) if key == :order!
           newhash.merge(key => value)
         end
       end
