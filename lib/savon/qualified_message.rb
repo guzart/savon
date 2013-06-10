@@ -25,7 +25,7 @@ module Savon
           )
         else
           add_namespaces_to_values(value, path) if key == :order!
-          newhash.merge(key => value)
+          newhash.merge(translated_key => value)
         end
       end
     end
